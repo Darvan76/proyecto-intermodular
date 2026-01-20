@@ -10,13 +10,21 @@
 <body>
     <!-- ENCABEZADO -->
     <header>
-        <div class="logo">
-            <h1>Mi Sitio Web</h1>
-        </div>
+        <a href="#inicio" class="logo">
+            <img src="imgs/canary-sports-logo.png" alt="canarysports logo" width="100" height="100">
+            <h1>¡Tu tienda de suplementos de confianza!</h1>
+        </a>
+        <!-- BOTÓN HAMBURGUESA -->
+        <button class="menu-toggle" id="menuToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
         <!-- NAVEGACIÓN -->
-        <nav>
+        <nav class="nav-menu" id="navMenu">
             <ul>
                 <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#productos-destacados">Productos</a></li>
                 <li><a href="#servicios">Servicios</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
@@ -29,6 +37,59 @@
         <section id="inicio">
             <h2>Bienvenido</h2>
             <p>Contenido principal de la página.</p>
+        </section>
+
+        <!-- PRODUCTOS DESTACADOS - CARRUSEL -->
+        <section id="productos-destacados">
+            <h2>Productos Destacados</h2>
+            <div class="carousel-container">
+                <button class="carousel-btn prev" onclick="moveCarousel(-1)">❮</button>
+                <div class="carousel-wrapper">
+                    <div class="carousel">
+                        <div class="carousel-item">
+                            <img src="imgs/producto1.jpg" alt="Producto 1">
+                            <h3>Proteína Whey</h3>
+                            <p class="precio">€29.99</p>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imgs/producto2.jpg" alt="Producto 2">
+                            <h3>BCAA Aminoácidos</h3>
+                            <p class="precio">€24.99</p>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imgs/producto3.jpg" alt="Producto 3">
+                            <h3>Creatina Monohidrato</h3>
+                            <p class="precio">€19.99</p>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imgs/producto4.jpg" alt="Producto 4">
+                            <h3>Vitamina D3</h3>
+                            <p class="precio">€14.99</p>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imgs/producto5.jpg" alt="Producto 5">
+                            <h3>Omega-3 Fish Oil</h3>
+                            <p class="precio">€22.99</p>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imgs/producto6.jpg" alt="Producto 6">
+                            <h3>Multivitamínico</h3>
+                            <p class="precio">€17.99</p>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imgs/producto7.jpg" alt="Producto 7">
+                            <h3>Pre-Workout Energy</h3>
+                            <p class="precio">€27.99</p>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imgs/producto8.jpg" alt="Producto 8">
+                            <h3>Zinc + Magnesio</h3>
+                            <p class="precio">€18.99</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-btn next" onclick="moveCarousel(1)">❯</button>
+            </div>
         </section>
 
         <!-- ARTÍCULOS/CONTENIDO -->
@@ -76,7 +137,7 @@
 
     <!-- PIE DE PÁGINA -->
     <footer>
-        <p>&copy; 2026 Mi Sitio Web. Todos los derechos reservados.</p>
+        <p>&copy; 2026 | Ningun tipo de derecho reservado - Proyecto Intermodular.</p>
         <ul>
             <li><a href="#privacidad">Privacidad</a></li>
             <li><a href="#terminos">Términos</a></li>
