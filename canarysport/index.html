@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descripción de la página">
+    <title>Mi Página Web</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- ENCABEZADO -->
+    <header>
+        <div class="logo">
+            <h1>Mi Sitio Web</h1>
+        </div>
+        <!-- NAVEGACIÓN -->
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main>
+        <!-- SECCIÓN PRINCIPAL -->
+        <section id="inicio">
+            <h2>Bienvenido</h2>
+            <p>Contenido principal de la página.</p>
+        </section>
+
+        <!-- ARTÍCULOS/CONTENIDO -->
+        <section id="servicios">
+            <h2>Nuestros Servicios</h2>
+            
+            <article>
+                <h3>Servicio 1</h3>
+                <p>Descripción del servicio.</p>
+            </article>
+
+            <article>
+                <h3>Servicio 2</h3>
+                <p>Descripción del servicio.</p>
+            </article>
+        </section>
+
+        <!-- FORMULARIO DE CONTACTO -->
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- BARRA LATERAL (opcional) -->
+    <aside>
+        <h3>Información Adicional</h3>
+        <ul>
+            <li>Enlace 1</li>
+            <li>Enlace 2</li>
+            <li>Enlace 3</li>
+        </ul>
+    </aside>
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+        <p>&copy; 2026 Mi Sitio Web. Todos los derechos reservados.</p>
+        <ul>
+            <li><a href="#privacidad">Privacidad</a></li>
+            <li><a href="#terminos">Términos</a></li>
+        </ul>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="script.js"></script>
+</body>
+</html>
